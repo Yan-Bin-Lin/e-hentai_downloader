@@ -48,7 +48,7 @@ def download(src, count, headers):
             picture = requests.get(src, headers = headers)
             #try to get picture src
             if picture.status_code == 200:
-                open(path + str(count) + '.jpg', 'wb').write(picture.content)
+                open(path + str(count) + src[len(src) - 4:], 'wb').write(picture.content)
                 break
             else:
                 raise
