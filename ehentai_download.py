@@ -16,8 +16,7 @@ import requests
 
 #the below should fill up
 #header
-headers = {'user-agent': 'you should write your user-agent here',
-           'Cookie' : 'you should write your cookie here'
+headers = {'user-agent': 'you should write your user-agent here'
            }
 #path
 path = 'you should write your path here'
